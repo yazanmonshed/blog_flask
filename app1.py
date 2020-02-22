@@ -5,7 +5,6 @@ from data import Articles
 app1 = Flask(__name__)
 
 app1.debug = True
-cities= ['amman', 'jurslem', 'maka','bagdad','demasq','Cairo','kuwiat'] 
 Articles = Articles()
 
 
