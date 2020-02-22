@@ -17,10 +17,16 @@ def index():
 def articles():
     return render_template('articles.html', articles = Articles)
 
+@app1.route('/article/<string:id>/')
+def article(id):
+    return render_template("article.html", id=id)
+
+
 
 @app1.route("/about")
 def about():
     return render_template("about-us.html")
+
 
 if __name__=="__main__":
     app1.run()
